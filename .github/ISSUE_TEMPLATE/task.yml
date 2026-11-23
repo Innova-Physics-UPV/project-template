@@ -1,0 +1,43 @@
+name: Task
+description: A deliverable assigned by Direction
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: What is to be delivered
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How the reviewer will know it is done.
+    validations:
+      required: true
+  - type: input
+    id: task-team
+    attributes:
+      label: Task team and convener
+    validations:
+      required: true
+  - type: dropdown
+    id: department
+    attributes:
+      label: Department
+      multiple: true
+      options:
+        - Applied Physics
+        - Electronics and Control
+        - Technical Design
+        - Communication
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
