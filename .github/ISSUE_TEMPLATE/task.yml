@@ -2,6 +2,7 @@ name: Task
 description: A deliverable assigned by Direction
 title: "[Task] "
 labels: ["task"]
+projects: ["Innova-Physics-UPV/4"]
 body:
   - type: textarea
     id: deliverable
